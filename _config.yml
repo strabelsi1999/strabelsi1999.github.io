@@ -81,7 +81,7 @@ analytics:
 # Site Author
 author:
   name             : "Sami Trabelsi"
-  avatar           : "bio-photo.jpeg.png"
+  avatar           : "bio-photo.jpeg"
   bio              : "Your biography for the left-hand sidebar"
   location         : "Location"
   employer         :
