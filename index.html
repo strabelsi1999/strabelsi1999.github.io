@@ -14,14 +14,18 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
-
+		<style>
+			.nav-container {
+			  padding-right: 45px;
+			}
+		  </style>
 		<!-- Wrapper -->
 			<div id="wrapper">
 
 				<!-- Header -->
 					<header id="header">
 						<div class="logo">
-							<span class="icon fa-gem"></span>
+							<a href="Sami-Trabelsi-Resume.pdf" download="proposed_file_name"  target="_blank"> <h1 style="padding-top: 0.5cm; padding-left: 5px;"> CV </h1> </a>
 						</div>
 						<div class="content">
 							<div class="inner">
@@ -30,12 +34,13 @@
 								<p> Here you will find everything there is to know about me. </p>
 							</div>
 						</div>
-						<nav>
+						<nav class="nav-container">
 							<ul>
 								<li><a href="#intro">Intro</a></li>
 								<li><a href="#education">Education</a></li>
 								<li><a href="#internship">Internships</a></li>
 								<li><a href="#skills">Skills</a></li>
+								<li><a href="#projects">Projects</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
@@ -99,7 +104,7 @@
 
 								<span class="image main"><img src="images/aiesec.png" alt="" /></span>
 							
-								<h3 style="line-height: 0.1em;">AIESEC Marrakech</h3>
+								<h3 style="line-height: 0.1em;">AIESEC Marrakech 2019</h3>
 								<i style="line-height: 0.4em; vertical-align: top;"> Promoting Tourism in Marrakech </i> <br>
 								<i> Lead Articles Coordinator</i>
 								<li> Managed a team of 15 people from different nationalities. </li>
@@ -141,7 +146,72 @@
 								 <li> English: Advanced</li>
 								 <li> Italian: Work in Progress</li>
 							</article>
+						<!-- Projects-->
+
+						<article id="projects">
+							<h2 class="major">Projects</h2>
+							<br>
+							<a href="https://github.com/strabelsi1999/Unemployment-Prediction-in-Europe" target="_blank"> <h3 style="line-height: -10cm;"> <u> Unemployment Prediction in Europe </u></h3> </a>
+							<span  class="image main"><img src="images/project-unemployment.png" alt="" /></span>
+							<p> The objective of this project is to conduct a comprehensive analysis of the unemployment rates across various European 
+								countries. The primary goals include identifying patterns and cycles within the data, determining the factors that 
+								influence this metric, developing a robust model that effectively explains the variable, and ultimately, making predictions 
+								regarding future unemployment rates. <br>
+
+								To achieve these objectives, the project will be divided into several stages: 
+								
+								<ol>1. Initial Exploratory Data Analysis (EDA): This phase involves the careful examination of the available data to select 
+								the most relevant variables. It aims to gain a deep understanding of the data and identify the appropriate statistical 
+								tools necessary for further analysis.</ol>
+								
+								<ol>2. Variable Analysis: Once the relevant data has been identified, a detailed analysis of the variables will be conducted. 
+								This step aims to investigate the relationships between the unemployment rate and various factors that may influence it, 
+								such as economic indicators, labor market conditions, and policy interventions.</ol>
+								
+								<ol>3. Model Development: Based on the insights gained from the variable analysis, a comprehensive model will be created. 
+								This model will aim to effectively explain the fluctuations in the unemployment rate, incorporating the identified 
+								influencing factors. The model's accuracy and reliability will be evaluated through rigorous testing and validation 
+								procedures.</ol>
+								
+								<ol>4. Time Series Analysis: In the final stage, a time series analysis will be performed to explore the temporal trends 
+								and patterns within the unemployment rate data. This analysis will provide valuable insights into the cyclical nature 
+								of unemployment and assist in making predictions about future unemployment rates.</ol>
+								
+								By following this structured approach, the project aims to offer a clearer and more professional understanding of the 
+								unemployment rate dynamics in European countries, enabling informed decision-making and policy recommendations. <br> </p>
+
+<br> <br> 
+
+								<a href="https://github.com/strabelsi1999/Traveling_Salesman_Veneto" target="_blank"> <h3 style="line-height: -10cm;"> <u> Traveling Salesman in Veneto</u></h3> </a>
+								<span  class="image main"><img src="images/salesman.jpg" alt="" /></span>
 							
+							
+This project focuses on optimizing the delivery route for a salesman who starts in Venezia, Italy, and needs to deliver packages to various cities 
+in the Veneto region before heading to Milan. The goal is to maximize the number of packages delivered within a specified deadline.
+
+<li> Problem Description: 
+
+The problem at hand can be described as the classical Traveling Salesman Problem (TSP) with additional constraints. 
+The TSP involves finding the shortest possible route that visits a set of cities exactly once and returns to the starting city. 
+In this case, the starting city is Venezia, and the final destination is Milan. However, the objective is not only to minimize the distance traveled 
+but also to deliver as many packages as possible within a given time limit.
+
+Each city in the Veneto region has a specific demand, representing the number of packages to be delivered there. 
+The salesman must prioritize visiting cities with higher demands while ensuring that the overall route can be completed before the deadline expires.
+</li>
+<li > Approach:
+<ol > 1. Data Collection: Gather information about the cities in the Veneto region, including their distances from Venezia and the package demands in each city.</ol>
+<ol> 2. Formulation: Model the problem as an optimization program, considering the constraints and objectives. 
+	The decision variables are wether the salesman goes from city i to city j.</ol>
+<ol> 3. Time Management: Ensure that the algorithm takes into account the time required to travel between cities, the time spent delivering packages, 
+	and the deadline. This could involve dynamically adjusting the route based on estimated travel times and delivery durations.</ol>
+<ol> 4. Output: Once an optimized solution is obtained, generate a route plan that specifies the order of cities to be visited and the number of packages delivered
+	 in each city</ol>
+</li>
+
+							</p>
+
+						</article>
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
@@ -165,12 +235,7 @@
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
 								</form>
-								<ul class="icons">
-									<li><a href="https://www.linkedin.com/in/sami-trabelsi99/" class="icon brands fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://www.facebook.com/sami.trabelsi.3386/" class="icon brands fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
-									<li><a href="https://www.instagram.com/sami_trabelsi99/?hl=en" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
-									<li><a href="https://github.com/strabelsi1999" class="icon brands fa-github" target="_blank"><span class="label" >GitHub</span></a></li>
-								</ul>
+								
 							</article>
 
 						<!-- Elements -->
@@ -419,7 +484,12 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/sami-trabelsi99/" class="icon brands fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://www.facebook.com/sami.trabelsi.3386/" class="icon brands fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/sami_trabelsi99/?hl=en" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/strabelsi1999" class="icon brands fa-github" target="_blank"><span class="label" >GitHub</span></a></li>
+						</ul>
 					</footer>
 
 			</div>
