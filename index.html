@@ -282,16 +282,16 @@
 								<a href="https://public.tableau.com/shared/G7GGJH4RW?:display_count=n&:origin=viz_share_link" target="_blank"> <h3 style="line-height: -10cm;"> <u> Dashboard Infections  </u></h3> </a>
 								<a href="https://public.tableau.com/shared/G7GGJH4RW?:display_count=n&:origin=viz_share_link" target="_blank"> <h3 style="line-height: -10cm;"> <u> Dashboard Vaccinations  </u></h3> </a>
 <br> <br>
-								<li>Project Overview:</li>
+<li><strong style="font-size: 18px;">Project Overview:</strong></li>  
 								This project explores the global impact of COVID-19 using SQL for data extraction, transformation, and analysis, and Tableau for data visualization. It provides insights into infection rates, mortality rates, and vaccination progress worldwide.
 								<br> <br>
-								<li>Tools & Skills Used:</li>
+								<li><strong style="font-size: 18px;">Tools & Skills Used:</strong></li>
 								<ol>
 								<li>SQL: Joins, CTEs, Temp Tables, Window Functions, Aggregate Functions, Data Type Conversions, Views</li>
 								<li>Tableau: Interactive Dashboard Design </li>
 							</ol>
 								<br> <br>
-							<li>SQL Analysis Breakdown:</li>
+								<li><strong style="font-size: 18px;">SQL Analysis Breakdown: </strong></li>
 								
 								<ol>
 									<li> <b><i>Data Exploration:Extracted key fields: </i></b>Location, Date, Total_Cases, New_Cases, Total_Deaths, Population.</li>
@@ -307,7 +307,7 @@
 								</ol>
 								
 								
-								<li>Tableau Dashboard:</li>
+								<li><strong style="font-size: 18px;">Tableau Dashboard:</li></strong>
 								<ol>
 									<li><b><i>Total Cases and Deaths Overview: </i></b>A line graph showing the global trend of COVID-19 cases and deaths over time.</li>
 									<li><b><i>Mortality Rate Analysis: </i></b>A bar chart displaying death percentages by country.</li>
@@ -316,89 +316,138 @@
 									<li><b><i>Highest Infection and Death Rates: </i></b>Ranked tables highlighting countries with the most severe COVID-19 impact.</li>
 									<li><b><i>Filters: </i></b>Each dashboard has a Date and Country filter to be able to vizualuze each periof / country separetly.</li>
 								</ol>
-								<li>Conclusion:
+								<li><strong style="font-size: 18px;">Conclusion:</strong> <br>
 									This project combines SQL’s robust data manipulation capabilities with Tableau’s powerful visualization features to provide a comprehensive analysis of COVID-19’s impact. It effectively identifies key insights, such as high-risk regions, mortality trends, and vaccination progress, enabling data-driven decision-making.</li>
+
+								<br> <br>
+								<a href="https://github.com/strabelsi1999/Sql_PowerBI" target="_blank"> <h3 style="line-height: -10cm;"> <u> Nashville Housing Data Cleaning & Visualization </u></h3> </a>
+								<span  class="image main"><img src="images/Housing.png" alt="" /></span>						
+
+								<br> <br>
+								<li><strong style="font-size: 18px;">Project Overview:</li></strong>
+This project involves cleaning and analyzing real estate transaction data from Nashville. The primary objective is to transform raw data into a structured format and visualize key insights using Power BI. The analysis focuses on property sales trends, revenue distribution, and land use classification.  
+<br><br>  
+
+<li><strong style="font-size: 18px;">Data Cleaning Process:</li></strong>
+The dataset was cleaned using SQL queries to ensure consistency and accuracy. Key steps included:  
+<ol>
+<li>Standardizing date formats to ensure uniformity in timestamps.</li>  
+<li>Filling missing property addresses by referencing parcel IDs.</li>  
+<li>Splitting property and owner addresses into separate columns for better data granularity.</li>  
+<li>Converting <b>"Y"</b> and <b>"N"</b> values in the <b>"Sold As Vacant"</b> column to <b>"Yes"</b> and <b>"No"</b> for better readability.</li>  
+<li>Removing duplicate records based on property attributes.</li>  
+<li>Dropping unused columns to streamline the dataset.</li>  </ol>
+<br>
+
+<li><strong style="font-size: 18px;">Power BI Dashboard Features:</li></strong>
+The Power BI dashboard presents key insights using interactive visualizations:  
+<br>
+
+
+<b><i><ol>KPIs (Key Performance Indicators): </i></b>
+ 
+	<li>  - Total Sales: 56K transactions  </li>  
+		<li>  - Total Revenue: $18 billion  </li>  
+			<li>  - Total Parcels: 49K properties  </li>  
+</ol>  
+<ol><b><i>Time-Series Analysis: </i></b>
+	<li>  - Total Revenue, Sales Volume, and Average Price trends are displayed over time.  </li> 
+		<li>  - A date filter** allows users to analyze trends within specific timeframes.  </li> 
+</ol>  
+<ol> <b><i>Revenue Breakdown by Land Use:</i></b>
+	<li> A pie chart categorizes property sales by land use type (Single Family, Condo, Duplex, etc.).  </li> 
+</ol>  
+<ol><b><i>Revenue Breakdown by City:</i></b>
+	<li> A bar chart displays total revenue contributions per city, highlighting Nashville as the dominant market.  </li> 
+</ol>  
+<br>
+
+<li><strong style="font-size: 18px;">Conclusion:</li></strong>
+This project demonstrates how SQL-based data cleaning and Power BI visualization can be combined to derive actionable insights from real estate data. The analysis provides a comprehensive overview of Nashville's real estate trends, aiding stakeholders in making data-driven decisions. Future improvements could include integrating predictive modeling to forecast market trends.  
 
 								<br> <br>
 							<a href="https://github.com/strabelsi1999/Paintings_Classification" target="_blank"> <h3 style="line-height: -10cm;"> <u> Painting Classification </u></h3> </a>
 								<span  class="image main"><img src="images/painting.jpg" alt="" /></span>
 							
 							
-								<li>Project Overview:</li>
+								<li><strong style="font-size: 18px;">Project Overview:</li></strong>
 								This project focuses on developing a neural network model capable of classifying paintings by identifying their respective painters. The goal is to build a reliable image classification system that can accurately predict the artist behind a given painting. The challenge lies in processing diverse artistic styles while ensuring high accuracy despite variations in brushwork, color schemes, and composition.
 								<br> <br>
-								<li>Problem Description:</li>
+								<li><strong style="font-size: 18px;">Problem Description:</li></strong>
 								The task can be formulated as a supervised image classification problem. Given a dataset of paintings from multiple artists, the objective is to train a deep learning model to recognize and classify paintings based on their visual features. The chosen approach is to use a Convolutional Neural Network (CNN), which is well-suited for image classification tasks due to its ability to extract hierarchical features from images.
 								<br> <br>
-							<li>The project is structured into two phases:</li>
+								<li><strong style="font-size: 18px;">The project is structured into two phases:</li></strong>
 								
 								<ol>1. Binary Classification: The model is first trained to distinguish between paintings by Picasso and Monet, testing its ability to differentiate between two distinct artistic styles.</ol>
 								<ol>2. Multi-Class Classification: The model is expanded to classify paintings from four artists (Monet, Picasso, Van Gogh, and Renoir), refining its predictive capabilities on a broader dataset.</ol>
 								
 								
-								<li>Approach:</li>
-								<ol>Data Collection: Images and metadata were gathered using a web-scraping algorithm from WikiArt. The images were stored in Google Drive, categorized by artist, while additional metadata was compiled into an Excel file.</ol>
+								<li><strong style="font-size: 18px;">Approach:</li></strong>
+								<ol><li><b><i>Data Collection:</i></b> Images and metadata were gathered using a web-scraping algorithm from WikiArt. The images were stored in Google Drive, categorized by artist, while additional metadata was compiled into an Excel file.
 								
-								<ol>Data Preprocessing:
+									<li><b><i>Data Preprocessing:</i></b>
 								Irrelevant images were removed.
 								Images were resized to consistent dimensions (210x210 and 220x220).
-								Images were converted into arrays and normalized for training.</ol>
-								<ol>Model Specification:
+								Images were converted into arrays and normalized for training.</li>
+								<li><b><i>Model Specification:</i></b>
 								A CNN architecture was implemented, leveraging convolutional layers with ReLU activation and max pooling to extract features.
 								The binary classification model used a sigmoid activation function, while the multi-class model applied softmax activation.
-								The Adam optimizer and loss functions (binary cross-entropy for two painters, sparse categorical cross-entropy for four painters) were used to train the models.</ol>
-								<ol>Model Optimization:
+								The Adam optimizer and loss functions (binary cross-entropy for two painters, sparse categorical cross-entropy for four painters) were used to train the models.</li>
+								<li><b><i>Model Optimization:</i></b>
 								Various architectures were tested, adjusting the number of convolutional layers, dense layers, and neurons.
 								The best-performing binary classification model had three convolutional layers, one dense output layer, and 128 neurons per layer, optimized over five epochs.
-								The best-performing multi-class classification model had four convolutional layers, one dense output layer, and 64 neurons per layer, optimized over six epochs.</ol>
-								<ol>Evaluation:
+								The best-performing multi-class classification model had four convolutional layers, one dense output layer, and 64 neurons per layer, optimized over six epochs.</li>
+								<li><b><i>Evaluation:</i></b>
 								The dataset was split into training (80%), validation (30% of training), and test (20%) sets.
 								Accuracy and validation loss were analyzed to identify the optimal architecture and prevent overfitting.
-								The binary classification model achieved ~90% accuracy, while the multi-class model reached ~68% accuracy.</ol>
-								<li>Conclusion:
+								The binary classification model achieved ~90% accuracy, while the multi-class model reached ~68% accuracy.</li></ol>
+								<li><strong style="font-size: 18px;">Conclusion:</li></strong>
 								The project demonstrated the potential of CNNs for artistic style recognition. However, challenges such as dataset imbalance and computational limitations affected the final accuracy. Future work could involve expanding the dataset, refining the model architecture, and leveraging more powerful computational resources to improve classification performance.</li>
 
 								<br> <br>
+								
 								<a href="https://github.com/strabelsi1999/Sentiment_Analysis_Interview/" target="_blank"> <h3 style="line-height: -10cm;"> <u> Sentiment Analysis Interview</u></h3> </a>
 								<span  class="image main"><img src="images/sentiment-analysis.png" alt="" /></span>
 							
 							
-								<li>Project Overview</li>
+								<li><strong style="font-size: 18px;">Project Overview</li></strong>
 								This project focuses on analyzing public sentiment regarding Andrew Tate based on comments from his interview with Piers Morgan on YouTube. The objective is to determine whether the general perception leans positively or negatively and to understand the structure of online discussions using sentiment analysis and network analysis.
 								<br> <br>
-								<li>Problem Description</li>
+								<li><strong style="font-size: 18px;">Problem Description</li></strong>
 								Public opinion on controversial figures is often shaped by algorithmic content curation, which reinforces users' existing biases. This project aims to quantify and visualize the sentiment expressed in thousands of YouTube comments, providing a more objective representation of audience reactions.
 								<br> <br>
-								<li>The study leverages two analytical approaches:</li>
-								<ol>Sentiment Analysis – Using Natural Language Processing (NLP) techniques such as VADER and NRC Emotion Lexicon, the comments are categorized into positive, negative, or neutral sentiments.</ol>
-								<ol>Network Analysis – A graph-based approach is used to visualize relationships between comments, distinguishing between original comments and replies while identifying key discussion trends.</ol>
+								<li><strong style="font-size: 18px;">The study leverages two analytical approaches:</li></strong>
+								<ol> <li><b><i>Sentiment Analysis </i></b>– Using Natural Language Processing (NLP) techniques such as VADER and NRC Emotion Lexicon, the comments are categorized into positive, negative, or neutral sentiments.</li>
+									<li><b><i></i>Network Analysis </i></b>– A graph-based approach is used to visualize relationships between comments, distinguishing between original comments and replies while identifying key discussion trends.</li></ol>
 								
-								<li>Approach</li>
-								<ol>Data Collection:
+								<li><strong style="font-size: 18px;">Approach</li></strong>
+								<ol><li><b><i>Data Collection:</i></b>
 								Comments were extracted from the YouTube interview using web scraping techniques.
-								The dataset was preprocessed by removing spam, duplicates, and irrelevant text.</ol>
+								The dataset was preprocessed by removing spam, duplicates, and irrelevant text.</li>
 								
-								<ol>Sentiment Analysis:
+								<li><b><i>Sentiment Analysis:</i></b>
 								Implemented VADER (Valence Aware Dictionary and sEntiment Reasoner) for sentiment scoring.
 								Used NRC Emotion Lexicon to classify emotions such as anger, joy, and surprise.
-								Compared the results to identify whether the general sentiment leaned positive, negative, or neutral.</ol>
+								Compared the results to identify whether the general sentiment leaned positive, negative, or neutral.</li>
 								
-								<ol>Network Analysis:
+								<li><b><i>Network Analysis:</i></b>
 								Constructed a graph representation of the comments, where nodes represent comments and edges represent replies.
 								Analyzed word co-occurrence patterns to determine common discussion themes.
-								Visualized the hierarchical structure of discussions, highlighting dominant opinions and interaction clusters.</ol>
+								Visualized the hierarchical structure of discussions, highlighting dominant opinions and interaction clusters.</li>
 								
-								<ol>Evaluation and Insights:
+								<li><b><i>Evaluation and Insights:</i></b>
 								Identified a slight positive sentiment bias towards Andrew Tate.
 								Found a balanced mix of both supportive and critical viewpoints, indicating a diverse audience perspective.
-								Network analysis revealed clusters of engagement, with some topics receiving significantly higher interactions.</ol>
+								Network analysis revealed clusters of engagement, with some topics receiving significantly higher interactions.</li></ol>
 								
-								<ol>Conclusion
+								<li><strong style="font-size: 18px;">Conclusion</li></strong>
 								This project demonstrates the effectiveness of sentiment and network analysis in understanding public opinion. While the YouTube comments on the interview indicate a general positive inclination towards Andrew Tate, broader conclusions require further analysis across multiple platforms. Future work could expand the study to Twitter, Reddit, and other social media channels to obtain a more comprehensive sentiment distribution.</ol>
 
 	 <br> <br> 
 							<a href="https://github.com/strabelsi1999/Unemployment-Prediction-in-Europe" target="_blank"> <h3 style="line-height: -10cm;"> <u> Unemployment Prediction in Europe </u></h3> </a>
 							<span  class="image main"><img src="images/project-unemployment.png" alt="" /></span>
+
+							<li><strong style="font-size: 18px;">Project Overview</li></strong>
 							<p> The objective of this project is to conduct a comprehensive analysis of the unemployment rates across various European 
 								countries. The primary goals include identifying patterns and cycles within the data, determining the factors that 
 								influence this metric, developing a robust model that effectively explains the variable, and ultimately, making predictions 
