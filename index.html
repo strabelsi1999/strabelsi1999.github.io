@@ -274,7 +274,141 @@
 						<article id="projects">
 							<h2 class="major">Projects</h2>
 							<br>
-							<a href="https://github.com/strabelsi1999/COVID-19_Data_Analysis_and_Visualization_Project_Overview" target="_blank"> <h3 style="line-height: -10cm;"> <u> COVID-19 Data Analysis and Visualization Project Overview </u></h3> </a>
+
+								<a href="https://github.com/strabelsi1999/Sql_PowerBI" target="_blank"> <h3 style="line-height: -10cm;"> <u> Nashville Housing Data Cleaning & Visualization </u></h3> </a>
+								<span  class="image main"><img src="images/Housing.png" alt="" /></span>						
+
+								<br> <br>
+
+								<h3> Project Overview</h3>
+								<p>
+								  This project involves cleaning and analyzing real estate transaction data from Nashville. The primary objective is to transform raw data into a structured format and visualize key insights using <strong>Power BI</strong>.
+								  The analysis focuses on <em>property sales trends, revenue distribution, and land use classification</em>.
+								</p>
+							  
+								<h3>Data Cleaning Process (Using SQL)</h3>
+								<p>The dataset was cleaned using SQL queries to ensure consistency and accuracy. Key steps included:</p>
+								<ul>
+								  <li>Standardizing date formats to ensure uniformity in timestamps.</li>
+								  <li>Filling missing property addresses by referencing <code>parcel IDs</code>.</li>
+								  <li>Splitting property and owner addresses into separate columns for better data granularity.</li>
+								  <li>Converting <code>"Y"</code> and <code>"N"</code> values in the <code>"Sold As Vacant"</code> column to <code>"Yes"</code> and <code>"No"</code> for better readability.</li>
+								  <li>Removing duplicate records based on property attributes.</li>
+								  <li>Dropping unused columns to streamline the dataset.</li>
+								</ul>
+							  
+								<h3>📊 Power BI Dashboard Features</h3>
+								<p>The Power BI dashboard presents key insights using interactive visualizations:</p>
+							  
+								<h4> KPIs (Key Performance Indicators)</h4>
+								<ul>
+								  <li><strong>Total Sales:</strong> 56K transactions</li>
+								  <li><strong>Total Revenue:</strong> $18 billion</li>
+								  <li><strong>Total Parcels:</strong> 49K properties</li>
+								</ul>
+							  
+								<h4>Time-Series Analysis</h4>
+								<ul>
+								  <li>Visualizes Total Revenue, Sales Volume, and Average Price trends over time.</li>
+								  <li>Includes a <strong>date filter</strong> to allow users to explore specific timeframes.</li>
+								</ul>
+							  
+								<h4>Revenue Breakdown by Land Use</h4>
+								<p>
+								  A <strong>pie chart</strong> categorizes property sales by land use type (e.g., Single Family, Condo, Duplex, etc.).
+								</p>
+							  
+								<h4>Revenue Breakdown by City</h4>
+								<p>
+								  A <strong>bar chart</strong> shows total revenue contributions per city, with Nashville highlighted as the dominant market.
+								</p>
+							  
+								<h3>Conclusion</h3>
+								<p>
+								  This project demonstrates how SQL-based data cleaning and Power BI visualization can be combined to derive actionable insights from real estate data.
+								  The analysis provides a comprehensive overview of Nashville's real estate trends, aiding stakeholders in making data-driven decisions.
+								</p>
+								<br> <br>
+								<a href="LINKPROJECTETL" target="_blank"> <h3 style="line-height: -10cm;"> <u> European Weather ETL Pipeline Project </u></h3> </a>
+								<span  class="image main"><img src="images/tableau.png" alt="" /></span>						
+								
+								<br> <br>
+								<h3>Project Summary</h3>
+								<p>
+								  This project implements a <strong>fully automated ETL pipeline</strong> that collects
+								  <strong>real-time weather data</strong> from the OpenWeatherMap API for major European and North African cities.
+								  Using <strong>Apache Airflow</strong>, the pipeline ensures <em>daily scheduled extraction, transformation, and loading</em>
+								  of weather data into a <strong>Microsoft SQL Server</strong> database, enabling seamless reporting and analytics.
+								</p>
+							  
+								<h3>Tools & Technologies</h3>
+								<ul>
+								  <li><strong>Python</strong> – ETL logic</li>
+								  <li><strong>Apache Airflow</strong> – Workflow orchestration</li>
+								  <li><strong>SQL Server Express</strong> – Relational database</li>
+								  <li><strong>Pandas</strong> – Data transformation</li>
+								  <li><strong>SQLAlchemy</strong> – Database connectivity</li>
+								  <li><strong>OpenWeatherMap API</strong> – Real-time weather source</li>
+								</ul>
+							  
+								<h3>Project Objectives</h3>
+								<ul>
+								  <li>Automate weather data collection for over 80 cities.</li>
+								  <li>Maintain a historical record of daily weather conditions.</li>
+								  <li>Store structured data in SQL Server for querying and analysis.</li>
+								  <li>Enable connection to BI tools (e.g., Power BI, Tableau) for visualization.</li>
+								</ul>
+							  
+								<h3>Pipeline Overview</h3>
+							  
+								<h4>Step 1: Orchestration with Apache Airflow</h4>
+								<ul>
+								  <li>Defined an Airflow DAG named <code>weather_etl_pipeline</code>.</li>
+								  <li>Configured to run <strong>daily at midnight</strong> (<code>@daily</code>).</li>
+								  <li>Each DAG run triggers a function to fetch and process weather data for multiple cities.</li>
+								</ul>
+							  
+								<h4>Step 2: Extract Phase</h4>
+								<ul>
+								  <li>Calls the OpenWeatherMap API using Python <code>requests</code>.</li>
+								  <li>Retrieves temperature, weather condition, wind speed, humidity, and more.</li>
+								  <li>Handles HTTP errors and missing data gracefully.</li>
+								</ul>
+							  
+								<h4>Step 3: Transform Phase</h4>
+								<ul>
+								  <li>Normalizes the JSON API response using <code>pandas</code>.</li>
+								  <li>Converts timestamps to readable <code>datetime</code> format.</li>
+								  <li>Prepares clean data suitable for SQL ingestion.</li>
+								</ul>
+							  
+								<h4>Step 4: Load Phase</h4>
+								<ul>
+								  <li>Connects to SQL Server using <code>SQLAlchemy</code>.</li>
+								  <li>Loads data into the <code>weather_data</code> table.</li>
+								  <li>Configured with <code>if_exists='append'</code> to retain historical records.</li>
+								</ul>
+							  
+								<h3>Geographic Coverage</h3>
+								<p>
+								  The pipeline targets a broad range of cities across:
+								</p>
+								<ul>
+								  <li><strong>Western Europe</strong> (e.g., London, Paris, Madrid)</li>
+								  <li><strong>Central & Eastern Europe</strong> (e.g., Vienna, Warsaw)</li>
+								  <li><strong>Southern Europe & North Africa</strong> (e.g., Rome, Tunis, Casablanca, Cairo)</li>
+								</ul>
+							  
+								<h3>Use Cases</h3>
+								<ul>
+								  <li>Generate interactive dashboards with historical weather trends.</li>
+								  <li>Analyze weather patterns for supply chain or travel planning.</li>
+								  <li>Power a recommendation engine based on live climate conditions.</li>
+								</ul>
+								<h3> Conclusion </h3>
+						<p> This project successfully demonstrates the implementation of a modern ETL pipeline using Python, SQL Server, and Airflow. By leveraging API data extraction from OpenWeatherMap, transforming it into a structured format, and storing it in a relational database, the pipeline ensures continuous and automated data flow. Integrating Airflow provided clear orchestration, scheduling, and monitoring of the workflow, making it scalable and production-ready.</p>
+								<br> <br>
+								<a href="https://github.com/strabelsi1999/COVID-19_Data_Analysis_and_Visualization_Project_Overview" target="_blank"> <h3 style="line-height: -10cm;"> <u> COVID-19 Data Analysis and Visualization Project Overview </u></h3> </a>
 								<span  class="image main"><img src="images/tableau.png" alt="" /></span>						
 								Click to check the dashboards: 
 
@@ -318,54 +452,7 @@
 								</ol>
 								<li><strong style="font-size: 18px;">Conclusion:</strong> <br>
 									This project combines SQL’s robust data manipulation capabilities with Tableau’s powerful visualization features to provide a comprehensive analysis of COVID-19’s impact. It effectively identifies key insights, such as high-risk regions, mortality trends, and vaccination progress, enabling data-driven decision-making.</li>
-
-								<br> <br>
-								<a href="https://github.com/strabelsi1999/Sql_PowerBI" target="_blank"> <h3 style="line-height: -10cm;"> <u> Nashville Housing Data Cleaning & Visualization </u></h3> </a>
-								<span  class="image main"><img src="images/Housing.png" alt="" /></span>						
-
-								<br> <br>
-								<li><strong style="font-size: 18px;">Project Overview:</li></strong>
-This project involves cleaning and analyzing real estate transaction data from Nashville. The primary objective is to transform raw data into a structured format and visualize key insights using Power BI. The analysis focuses on property sales trends, revenue distribution, and land use classification.  
-<br><br>  
-
-<li><strong style="font-size: 18px;">Data Cleaning Process:</li></strong>
-The dataset was cleaned using SQL queries to ensure consistency and accuracy. Key steps included:  
-<ol>
-<li>Standardizing date formats to ensure uniformity in timestamps.</li>  
-<li>Filling missing property addresses by referencing parcel IDs.</li>  
-<li>Splitting property and owner addresses into separate columns for better data granularity.</li>  
-<li>Converting <b>"Y"</b> and <b>"N"</b> values in the <b>"Sold As Vacant"</b> column to <b>"Yes"</b> and <b>"No"</b> for better readability.</li>  
-<li>Removing duplicate records based on property attributes.</li>  
-<li>Dropping unused columns to streamline the dataset.</li>  </ol>
-<br>
-
-<li><strong style="font-size: 18px;">Power BI Dashboard Features:</li></strong>
-The Power BI dashboard presents key insights using interactive visualizations:  
-<br>
-
-
-<b><i><ol>KPIs (Key Performance Indicators): </i></b>
- 
-	<li>  - Total Sales: 56K transactions  </li>  
-		<li>  - Total Revenue: $18 billion  </li>  
-			<li>  - Total Parcels: 49K properties  </li>  
-</ol>  
-<ol><b><i>Time-Series Analysis: </i></b>
-	<li>  - Total Revenue, Sales Volume, and Average Price trends are displayed over time.  </li> 
-		<li>  - A date filter** allows users to analyze trends within specific timeframes.  </li> 
-</ol>  
-<ol> <b><i>Revenue Breakdown by Land Use:</i></b>
-	<li> A pie chart categorizes property sales by land use type (Single Family, Condo, Duplex, etc.).  </li> 
-</ol>  
-<ol><b><i>Revenue Breakdown by City:</i></b>
-	<li> A bar chart displays total revenue contributions per city, highlighting Nashville as the dominant market.  </li> 
-</ol>  
-<br>
-
-<li><strong style="font-size: 18px;">Conclusion:</li></strong>
-This project demonstrates how SQL-based data cleaning and Power BI visualization can be combined to derive actionable insights from real estate data. The analysis provides a comprehensive overview of Nashville's real estate trends, aiding stakeholders in making data-driven decisions. Future improvements could include integrating predictive modeling to forecast market trends.  
-
-								<br> <br>
+<br> <br>
 							<a href="https://github.com/strabelsi1999/Paintings_Classification" target="_blank"> <h3 style="line-height: -10cm;"> <u> Painting Classification </u></h3> </a>
 								<span  class="image main"><img src="images/painting.jpg" alt="" /></span>
 							
