@@ -330,7 +330,7 @@
 								</p>
 								<br> <br>
 								<a href="LINKPROJECTETL" target="_blank"> <h3 style="line-height: -10cm;"> <u> European Weather ETL Pipeline Project </u></h3> </a>
-								<span  class="image main"><img src="images/tableau.png" alt="" /></span>						
+								<span  class="image main"><img src="images/ETL.png" alt="" /></span>						
 								
 								<br> <br>
 								<h3>Project Summary</h3>
@@ -416,42 +416,48 @@
 								<a href="https://public.tableau.com/shared/G7GGJH4RW?:display_count=n&:origin=viz_share_link" target="_blank"> <h3 style="line-height: -10cm;"> <u> Dashboard Infections  </u></h3> </a>
 								<a href="https://public.tableau.com/shared/G7GGJH4RW?:display_count=n&:origin=viz_share_link" target="_blank"> <h3 style="line-height: -10cm;"> <u> Dashboard Vaccinations  </u></h3> </a>
 <br> <br>
-<li><strong style="font-size: 18px;">Project Overview:</strong></li>  
-								This project explores the global impact of COVID-19 using SQL for data extraction, transformation, and analysis, and Tableau for data visualization. It provides insights into infection rates, mortality rates, and vaccination progress worldwide.
-								<br> <br>
-								<li><strong style="font-size: 18px;">Tools & Skills Used:</strong></li>
-								<ol>
-								<li>SQL: Joins, CTEs, Temp Tables, Window Functions, Aggregate Functions, Data Type Conversions, Views</li>
-								<li>Tableau: Interactive Dashboard Design </li>
-							</ol>
-								<br> <br>
-								<li><strong style="font-size: 18px;">SQL Analysis Breakdown: </strong></li>
-								
-								<ol>
-									<li> <b><i>Data Exploration:Extracted key fields: </i></b>Location, Date, Total_Cases, New_Cases, Total_Deaths, Population.</li>
-									<li> <b><i>Mortality Rate Analysis: </i></b>Calculated the likelihood of death from COVID-19 by dividing total deaths by total cases, showing results as a percentage.</li>
-									<li> <b><i>Infection Rate Analysis: </i></b>Determined the percentage of the population infected by dividing total cases by the population size.</li>
-									<li> <b><i>Countries with Highest Infection Rate: </i></b>Identified countries with the highest infection counts and infection rates relative to their population.</li>
-									<li> <b><i>Countries with Highest Death Count: </i></b>Ranked countries by total COVID-19 deaths.</li>
-									<li> <b><i>Continental Death Counts: </i></b>Aggregated total deaths per continent.</li>
-									<li> <b><i>Global Statistics: </i></b>Summarized total cases, deaths, and calculated global death percentages.</li>
-									<li> <b><i>Vaccination Progress: </i></b>Used joins and window functions to calculate rolling vaccination numbers and the percentage of the population vaccinated.</li>
-									<li> <b><i>CTEs and Temp Tables: </i></b>Leveraged Common Table Expressions (CTEs) and temporary tables to streamline complex calculations.</li>
-									<li> <b><i>	Views Creation: </i></b>Created SQL views for easier data access and visualization in Tableau.</li>
-								</ol>
-								
-								
-								<li><strong style="font-size: 18px;">Tableau Dashboard:</li></strong>
-								<ol>
-									<li><b><i>Total Cases and Deaths Overview: </i></b>A line graph showing the global trend of COVID-19 cases and deaths over time.</li>
-									<li><b><i>Mortality Rate Analysis: </i></b>A bar chart displaying death percentages by country.</li>
-									<li><b><i>Infection Rate by Population: </i></b>A map visualizing the spread and infection percentage across countries.</li>
-									<li><b><i>Vaccination Progress: </i></b>A cumulative line graph illustrating vaccination rollout worldwide.</li>
-									<li><b><i>Highest Infection and Death Rates: </i></b>Ranked tables highlighting countries with the most severe COVID-19 impact.</li>
-									<li><b><i>Filters: </i></b>Each dashboard has a Date and Country filter to be able to vizualuze each periof / country separetly.</li>
-								</ol>
-								<li><strong style="font-size: 18px;">Conclusion:</strong> <br>
-									This project combines SQL’s robust data manipulation capabilities with Tableau’s powerful visualization features to provide a comprehensive analysis of COVID-19’s impact. It effectively identifies key insights, such as high-risk regions, mortality trends, and vaccination progress, enabling data-driven decision-making.</li>
+<h3>Project Overview:</h3>
+<p>
+  This project explores the global impact of COVID-19 using SQL for data extraction, transformation, and analysis, 
+  and Tableau for data visualization. It provides insights into infection rates, mortality rates, and vaccination progress worldwide.
+</p>
+
+<h3>Tools & Skills Used:</h3>
+<ul>
+  <li>SQL: Joins, CTEs, Temp Tables, Window Functions, Aggregate Functions, Data Type Conversions, Views</li>
+  <li>Tableau: Interactive Dashboard Design</li>
+</ul>
+
+<h3>SQL Analysis Breakdown:</h3>
+<ul>
+  <li><strong>Data Exploration:</strong> Extracted key fields such as Location, Date, Total Cases, New Cases, Total Deaths, and Population.</li>
+  <li><strong>Mortality Rate Analysis:</strong> Calculated the likelihood of death from COVID-19 by dividing total deaths by total cases, shown as a percentage.</li>
+  <li><strong>Infection Rate Analysis:</strong> Determined the percentage of the population infected by dividing total cases by the population size.</li>
+  <li><strong>Countries with Highest Infection Rate:</strong> Identified countries with the highest infection counts relative to their population.</li>
+  <li><strong>Countries with Highest Death Count:</strong> Ranked countries by total COVID-19 deaths.</li>
+  <li><strong>Continental Death Counts:</strong> Aggregated total deaths by continent.</li>
+  <li><strong>Global Statistics:</strong> Summarized total cases, deaths, and calculated global death percentages.</li>
+  <li><strong>Vaccination Progress:</strong> Used joins and window functions to calculate rolling vaccination numbers and vaccination percentages.</li>
+  <li><strong>CTEs and Temp Tables:</strong> Streamlined complex calculations using Common Table Expressions and temporary tables.</li>
+  <li><strong>Views Creation:</strong> Created SQL views for easier data access and visualization in Tableau.</li>
+</ul>
+
+<h3>Tableau Dashboard:</h3>
+<ul>
+  <li><strong>Total Cases and Deaths Overview:</strong> A line graph showing global COVID-19 cases and deaths over time.</li>
+  <li><strong>Mortality Rate Analysis:</strong> A bar chart displaying death percentages by country.</li>
+  <li><strong>Infection Rate by Population:</strong> A map visualizing infection spread and percentages across countries.</li>
+  <li><strong>Vaccination Progress:</strong> A cumulative line graph illustrating vaccination rollout worldwide.</li>
+  <li><strong>Highest Infection and Death Rates:</strong> Ranked tables highlighting countries most severely impacted.</li>
+  <li><strong>Filters:</strong> Each dashboard includes Date and Country filters to allow focused exploration by period or country.</li>
+</ul>
+
+<h3>Conclusion:</h3>
+<p>
+  This project combines SQL’s robust data manipulation capabilities with Tableau’s powerful visualization features to deliver 
+  a comprehensive analysis of COVID-19’s global impact. It effectively identifies key insights, including high-risk regions, 
+  mortality trends, and vaccination progress, enabling data-driven decision-making.
+</p>
 <br> <br>
 							<a href="https://github.com/strabelsi1999/Paintings_Classification" target="_blank"> <h3 style="line-height: -10cm;"> <u> Painting Classification </u></h3> </a>
 								<span  class="image main"><img src="images/painting.jpg" alt="" /></span>
